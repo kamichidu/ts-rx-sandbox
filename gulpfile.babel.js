@@ -7,7 +7,7 @@ import webpackConfig from './webpack.config.babel.js';
 const config= {
     dirs: {
         src: path.join(__dirname, 'src', 'main'),
-        dest: path.join(__dirname, 'dist'),
+        dest: path.join(__dirname, 'docs'),
     },
 };
 

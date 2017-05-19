@@ -7,7 +7,7 @@ const config= {
     },
     output: {
         publicPath: '/assets/js/',
-        path: path.join(__dirname, 'dist', 'assets', 'js'),
+        path: path.join(__dirname, 'docs', 'assets', 'js'),
         filename: '[name].js',
     },
     resolve: {
@@ -57,7 +57,7 @@ if(process.env.NODE_ENV !== 'production')
     config.output.pathinfo= true;
     // config.devtool= 'eval';
     config.devServer= {
-        contentBase: path.join(__dirname, 'dist'),
+        contentBase: path.join(__dirname, 'docs'),
         watchContentBase: true,
         inline: true,
         // proxy the lingr
