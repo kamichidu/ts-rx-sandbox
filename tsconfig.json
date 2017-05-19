@@ -8,8 +8,6 @@
         "alwaysStrict": true,
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
-        "sourceMap": true,
-        "allowJs": true,
-        "checkJs": true
+        "sourceMap": true
     }
 }

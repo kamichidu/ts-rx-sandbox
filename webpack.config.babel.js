@@ -53,20 +53,13 @@ const config= {
 if(process.env.NODE_ENV !== 'production')
 {
     // want build performance
-    // https://webpack.github.io/docs/build-performance.html
+    // https://webpack.js.org/configuration/devtool/
     config.output.pathinfo= true;
-    // config.devtool= 'eval';
+    config.devtool= '#cheap-module-eval-source-map';
     config.devServer= {
         contentBase: path.join(__dirname, 'docs'),
         watchContentBase: true,
         inline: true,
-        // proxy the lingr
-        proxy: {
-            '/api': {
-                target: 'http://lingr.com',
-                secure: false,
-            },
-        },
     };
 }
 
