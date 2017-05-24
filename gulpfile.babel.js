@@ -30,7 +30,7 @@ gulp.task('build:js', () => {
 });
 gulp.task('build', ['build:vendor', 'build:static', 'build:js']);
 
-gulp.task('watch', ['build'], () => {
+gulp.task('watch', ['build:vendor', 'build:static'], () => {
     gulp.watch(path.join(config.dirs.src, 'static', '**', '*'), ['build:static']);
 });
 

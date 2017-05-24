@@ -4,7 +4,7 @@
         "moduleResolution": "Node",
         "target": "es2015",
         "strict": true,
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "alwaysStrict": true,
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
